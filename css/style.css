@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab');
+
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; */
+
+:root {
+    font-size: 20px;
+}
+body {
+    margin: 0;
+    height: auto;
+}
+.container-main {
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.1);             
+}
+.section-header {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+.section-header h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+.section-header h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.section-header h4 {
+    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 3rem;
+}
+.container-home {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    width: 100%;
+}
+.dot {
+    color: crimson;
+    font-size: 3rem;
+}
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #e9e2e2;
+    display: inline-block; 
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #888;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition-duration: 0.7s;
+}
+.btn:hover {
+    background-color: #bbb;
+    transition-duration: 0.7s;
+    color: #555;
+}
+
+.landing-image {
+    background-image: url("../img/side-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+.section-content-work {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.content {
+    flex: 0 1 31%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem; 
+}
+.content h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.content img {
+    width: 95%;
+    transition-duration: 0.5s;  
+}
+.content img:hover {
+    box-shadow: 10px 5px 30px 10px rgba(0,0,0,0.1);
+    transition-duration: 0.5s;
+}
+.content a {
+    text-decoration: none;
+    color: #555;
+}
+.content h3 a {
+    transition: background 1s ease-in;
+}
+.content h3 a:hover {
+    border: 1px solid #888;
+    border-radius: 2rem;
+    padding: 0.5rem 1.3rem;
+    transition: background 1s ease-out;
+}
+.content h3 a:active {
+    border: 1px solid #888;
+    border-radius: 2rem;
+    padding: 0.5rem 1.3rem;
+    transition: background 1s ease-out;
+}
+.section-content {
+    font-family: 'Roboto Slab', serif;
+    color: #555;
+    padding: 1rem 3.5rem;
+}
+.section-content p {
+    line-height: 1.6rem;
+}
+.section-content h3 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.section-content p::first-letter {
+    font-size: 2rem;
+}
+.content-about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.content-about {
+    flex: 0 1 15%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.content-about img {
+    width: 75%;
+}
+.contact {
+    background-color: #ff1744;
+    color: #fff;
+}
+.section-content h4 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+.social-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-link {
+    flex: 0 1 33%;
+    margin-bottom: 2rem;
+}
+.social-link img {
+    width: 25%;
+    margin-left: 30%;
+}
+@media(max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+} 
+@media(max-width:720px) {
+    .content {
+        flex: 0 1 45%;
+    }
+    .content-about {
+        flex: 0 1 25%;
+    }
+    .social-link {
+        flex: 0 1 75%;
+    }
+    .social-link img {
+        width: 15%;
+    }
+
+}
+@media(max-width: 500px) {
+    .content {
+        flex: 0 1 90%;
+    }
+    .content-about {
+        flex: 0 1 45%;
+    }
+    .social-link img {
+        width: 20%;
+    }
+    
+}
+@media(max-width: 360px) {
+    .content-about {
+        flex: 0 1 80%;
+    }
+}
+@media(min-width: 640px) {
+    .home {
+        display: flex;
+        height: 100%;
+    }
+    .container-home, .landing-image {
+        height: 100vh;
+    }
+}
+@media(max-width: 480px) {
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
